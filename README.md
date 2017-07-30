@@ -36,7 +36,7 @@ $ hexo clean && hexo g
 
 [troyyang.com](http://troyyang.com)
 
-![image](https://images.troyyang.com/lazy-load-demo.gif)
+![image](https://images.troyyang.com/2017-7-30-lazy-load.gif)
 
 ## License
 

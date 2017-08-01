@@ -18,18 +18,17 @@ First add configuration in `_config.yml` from your hexo project.
 
 ```yaml
 lazyload:
-  enable: true # enable or disable this functionality
-  onlypost: false # if true, it means only the images from post will support lazyloading, otherwise, means the whole images of your site will use lazyload. 
-  loadingImg: ./images/loading.png # loading image will take in the place before the real image shows up.
+  enable: true 
+  onlypost: false
+  loadingImg: # eg. ./images/loading.png
 ```
-
 **onlypost**
-- if true, only the images from post or page will support lazy-load.
-- if false, the whole images of your site will use lazy-load, including the images dist from your theme, but not including the background images from CSS style.
+- If true, only the images from post or page will support lazy-load.
+- If false, the whole images of your site will use lazy-load, including the images dist from your theme, but not including the background images from CSS style.
 
 **loadingImg** 
-- If you keep the value nothing, then it will use the default loading image.
-- IF you want to customize the image, then you need to copy your loading image to your current theme image folder and then change this path to find it. 
+- If you keep the value nothing (by default), then it will use the default loading image.
+- If you want to customize the image, then you need to copy your loading image to your current theme image folder and then change this path to find it. 
 
 Run hexo command.
 
@@ -37,6 +36,10 @@ Run hexo command.
 $ hexo clean && hexo g
 ```
 
+## Test
+I've test it manually with some popular themes like landscape(official), material, next, jacman and myself theme [hexo-theme-twentyfifteen-wordpress](https://github.com/Troy-Yang/hexo-theme-twentyfifteen-wordpress), and yours I believe!
+
+Enjoy it!
 ## Demo
 
 [troyyang.com](http://troyyang.com)

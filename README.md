@@ -44,7 +44,7 @@ Enjoy it!
 
 [troyyang.com](http://troyyang.com)
 
-![image](https://images.troyyang.com/2017-7-30-lazy-load.gif)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-7-30-lazy-load.gif)
 
 ## License
 

@@ -20,7 +20,7 @@ First add configuration in `_config.yml` from your hexo project.
 lazyload:
   enable: true 
   onlypost: false
-  loadingImg: # eg. ./images/loading.png
+  loadingImg: # eg /images/loading.gif
 ```
 **onlypost**
 - If true, only the images from post or page will support lazy-load.

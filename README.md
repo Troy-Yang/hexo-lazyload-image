@@ -30,6 +30,12 @@ lazyload:
 - If you keep the value nothing (by default), then it will use the default loading image.
 - If you want to customize the image, then you need to copy your loading image to your current theme image folder and then change this path to find it. 
 
+### specify **no-lazy** for specify image
+we can also disable the lazy process if specify a attribute on img tag in both markdown or html
+```
+<img no-lazy src="abc.png" />
+```
+
 Run hexo command.
 
 ```bash

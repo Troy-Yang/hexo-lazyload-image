@@ -4,7 +4,8 @@
   "description": "a hexo plugin which is used to have all images support lazyload, with the help of this functionality, it will improve lots of the loading proformance.",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint ."
+    "eslint": "eslint .",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,11 @@
   "author": "Troy Yang",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^4.3.0",
     "uglify-js": "^3.0.27"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "hexo-fs": "^2.0.0",
+    "jest": "^24.9.0"
   }
 }

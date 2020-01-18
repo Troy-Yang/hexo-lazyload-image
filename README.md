@@ -52,6 +52,10 @@ Enjoy it!
 
 ![image](https://images.troyyang.com/2017-7-30-lazy-load.gif)
 
+## BugFix
+- Fixed the Fancybox compatibility issue
+
+
 ## License
 
 MIT

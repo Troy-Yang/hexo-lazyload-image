@@ -18,9 +18,10 @@ First add configuration in `_config.yml` from your hexo project.
 
 ```yaml
 lazyload:
-  enable: true 
+  enable: true
   onlypost: false
   loadingImg: # eg ./images/loading.gif
+  exportAPI: false
 ```
 **onlypost**
 - If true, only the images from post or page will support lazy-load.
@@ -29,6 +30,16 @@ lazyload:
 **loadingImg** 
 - If you keep the value nothing (by default), then it will use the default loading image.
 - If you want to customize the image, then you need to copy your loading image to your current theme image folder and then change this path to find it. 
+
+**exportAPI**
+- If true, the setting object **imageLazyLoadSetting** will export to window and you can get and use them.
+- If false (default value), nothing will be attached to window.
+```
+window.imageLazyLoadSetting = {
+  processImages, // core method to process lazyload image
+  processImagesThrottle, // throttle to process image with per 500 millisecond
+};
+```
 
 ### specify **no-lazy** for specify image
 we can also disable the lazy process if specify a attribute on img tag in both markdown or html

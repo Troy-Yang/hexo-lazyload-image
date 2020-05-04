@@ -19,9 +19,9 @@ First add configuration in `_config.yml` from your hexo project.
 ```yaml
 lazyload:
   enable: true
-  onlypost: false
-  loadingImg: # eg ./images/loading.gif
-  exportAPI: false
+  onlypost: false # optional
+  loadingImg: # optional eg ./images/loading.gif
+  isSPA: false # optional
 ```
 **onlypost**
 - If true, only the images from post or page will support lazy-load.
@@ -31,13 +31,15 @@ lazyload:
 - If you keep the value nothing (by default), then it will use the default loading image.
 - If you want to customize the image, then you need to copy your loading image to your current theme image folder and then change this path to find it. 
 
-**exportAPI**
-- If true, the setting object **imageLazyLoadSetting** will export to window and you can get and use them.
-- If false (default value), nothing will be attached to window.
+**isSPA**
+For performance considering, **isSPA** is added. If your theme is a SPA page, please set it as true to make the lazy loading works, 
+- If true, searching for each image during scrolling to support SPA page, 
+- If false (default value), the performance would be the best.
+
+**Helper APIs**
 ```
 window.imageLazyLoadSetting = {
   processImages, // core method to process lazyload image
-  processImagesThrottle, // throttle to process image with per 500 millisecond
 };
 ```
 
@@ -65,6 +67,7 @@ Enjoy it!
 
 ## BugFix
 - Fixed the Fancybox compatibility issue
+- Fixed the bug not working in SPA page like theme-volantis
 
 
 ## License

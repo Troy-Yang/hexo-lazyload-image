@@ -22,6 +22,7 @@ lazyload:
   onlypost: false # optional
   loadingImg: # optional eg ./images/loading.gif
   isSPA: false # optional
+  preloadRatio: 3 # optional, default is 1
 ```
 **onlypost**
 - If true, only the images from post or page will support lazy-load.
@@ -35,6 +36,9 @@ lazyload:
 For performance considering, **isSPA** is added. If your theme is a SPA page, please set it as true to make the lazy loading works, 
 - If true, searching for each image during scrolling to support SPA page, 
 - If false (default value), the performance would be the best.
+
+**preloadRatio**
+This option is for a better experience and default value is 1. This ratio means to pre-load the images where is within how many ratios than current screen size, even these images are not in current view point.
 
 **Helper APIs**
 ```

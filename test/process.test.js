@@ -43,6 +43,10 @@ it('should handle multi cases for `<img />` tag for replace', () => {
       actual: `<img class="abc" src="abc.png"></img>`,
       expect: `<img class="abc" src="${myLoadingImg}" data-original="abc.png"></img>`
     },
+    {
+      actual: `<img class="abc" src="abc.png" data-original="def.png"></img>`,
+      expect: `<img class="abc" src="abc.png" data-original="def.png"></img>`
+    },
   ];
 
   testCases.forEach(item => {

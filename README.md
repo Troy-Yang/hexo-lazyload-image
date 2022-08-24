@@ -47,6 +47,13 @@ window.imageLazyLoadSetting = {
 };
 ```
 
+### Low Quality Image Placeholder (LQIP)
+This plugin is not going to provide any complex strategy like hexo compiling to generate placeholder image or fetch image size. But it does support already if you specify both the placeholde image and original image as below:
+```
+<img src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-400,h-300,bl-30,q-50" data-original="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-400,h-300" />
+```
+![image](https://images.troyyang.com/lqip.gif)
+
 ### specify **bg-lazy** for background image coming from html or css
 we can also support the lazy process if specify a attribute on **any** tag in both markdown or html
 ```

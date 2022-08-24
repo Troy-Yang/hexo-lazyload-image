@@ -47,6 +47,12 @@ window.imageLazyLoadSetting = {
 };
 ```
 
+### specify **bg-lazy** for background image coming from html or css
+we can also support the lazy process if specify a attribute on **any** tag in both markdown or html
+```
+<div bg-lazy style="background-image: url('https://ik.imagekit.io/demo/img/image10.jpeg?tr=w-600,h-400'); height: 400px; max-width: 600px;"></div>
+```
+
 ### specify **no-lazy** for specify image
 we can also disable the lazy process if specify a attribute on img tag in both markdown or html
 ```

@@ -44,6 +44,7 @@ This option is for a better experience and default value is 1. This ratio means 
 ```
 window.imageLazyLoadSetting = {
   processImages, // core method to process lazyload image
+  onImageLoaded: // this will be triggered after any real image loaded
 };
 ```
 

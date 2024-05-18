@@ -4,8 +4,6 @@
 
 All the lazy-load images only shows up when they are within current viewport.
 
-> Don't worry about lazyload SEO problem, because Google supports it already. we just [Do nothing](http://dinbror.dk/blog/lazy-load-images-seo-problem/).
-
 ## Install
 
 ```bash
@@ -73,6 +71,19 @@ Run hexo command.
 $ hexo clean && hexo g
 ```
 
+### disable lazy for specify post
+To disable the lazy loading of images in a specific post, you can add `lazyimage: no` to the post's front matter header. However, this option will only work if the `onlypost` setting in your site's configuration file is set to true. 
+```yaml
+# In your post's front matter
+---
+title: My Post with Non-Lazy Loaded Images
+lazyimage: no
+---
+
+# In your site's config file
+onlypost: true
+```
+
 ## Test
 I've test it manually with some popular themes like landscape(official), material, next, jacman and myself theme [hexo-theme-twentyfifteen-wordpress](https://github.com/Troy-Yang/hexo-theme-twentyfifteen-wordpress), and yours I believe!
 
@@ -82,11 +93,6 @@ Enjoy it!
 [troyyang.com](http://troyyang.com)
 
 ![image](https://images.troyyang.com/2017-7-30-lazy-load.gif)
-
-## BugFix
-- Fixed the Fancybox compatibility issue
-- Fixed the bug not working in SPA page like theme-volantis
-
 
 ## License
 

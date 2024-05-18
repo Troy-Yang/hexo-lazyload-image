@@ -1,6 +1,6 @@
 {
   "name": "hexo-lazyload-image",
-  "version": "1.0.13",
+  "version": "1.1.0",
   "description": "a hexo plugin which is used to have all images support lazyload, with the help of this functionality, it will improve lots of the loading proformance.",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "author": "Troy Yang",
   "license": "ISC",
   "dependencies": {
-    "uglify-js": "^3.0.27"
+    "uglify-js": "^3.17.4"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

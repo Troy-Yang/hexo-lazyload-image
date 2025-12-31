@@ -27,6 +27,6 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "hexo-fs": "^2.0.0",
-    "jest": "^24.9.0"
+    "jest": "^30.2.0"
   }
 }
